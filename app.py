@@ -40,7 +40,7 @@ def handle_question():
 
     if (len(responses) == len(survey.questions)):
         """redirects to thank you page"""
-        return redirect("/complete")
+        return redirect("/completed")
     
     else:
         return redirect(f"/questions/{len(responses)}")
